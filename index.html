@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+</head>
+</style>
+<body>
+    <div id="container">
+        <div id="section">
+            <h1 id="heading">Let's Calculate</h1>
+            <div class="box">
+                <div id="number">
+                    <p id="text1">First Number</p>
+                    <input type="number" id="Number1" class="num">
+                    <p id="text2">Second Number</p>
+                    <input type="number" id="Number2" class="num">
+                </div>
+
+                <div id="operator">
+                    <button onclick="add()" name="Addition" id="Btn1" class="buttons"><a href="#">+</a></button>
+                    <button onclick="sub()" name="Subtraction" id="Btn2" class="buttons"><a href="#">-</a></button>
+                    <button onclick="mult()" name="Multiplication" id="Btn3" class="buttons"><a href="#">X</a></button>
+                    <button onclick="divi()" name="Division" id="Btn4" class="buttons"><a href="#">/</a></button>
+                </div>
+
+                <p id="output"></p>
+                <button onclick="clean()" id="Clear"> <a href="#">Clear</a></button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(68, 90, 109);
+}
+
+#section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box {
+    font-family: "Ubuntu";
+    font-size: 1.65rem;
+    background-color: #95a795;
+    box-shadow: 4px 4px 40px 14px rgb(176, 180, 176);
+    color: rgb(9, 10, 9);
+    font-weight: bold;
+    border: 5px solid rgb(67, 73, 67);
+    border-radius: 35rem;
+    width: 33rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12rem;
+    line-height: 3rem;
+}
+
+.num {
+    width: 13rem;
+    height: 1.5rem;
+    border: 1.85px solid rgb(89, 92, 88);
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+}
+
+#operator button {
+    margin-top: 1.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+    background-color: rgb(189, 181, 181);
+    color: white;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: rgb(1, 32, 1);
+    font-size: 1.55rem;
+}
+
+.buttons a:hover {
+    color: white;
+}
+
+#output {
+    margin-top: 2rem;
+    width: 12rem;
+    height: 3rem;
+    font-size: 1.35rem;
+    color: rgb(10, 10, 223);
+    border: 2px solid rgb(59, 48, 48);
+    box-shadow: 2px 2px 20px 2px white;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#Clear {
+    margin-top: 1rem;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid rgb(123, 123, 131);
+    border-radius: 40%;
+    box-shadow: 3px 5px 17px 7px rgb(211, 217, 219);
+    background-color: rgb(39, 43, 39);
+}
+
+#Clear a {
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#Clear a:hover {
+    font-size: 1rem;
+
+}
+
+#heading {
+    width: 30rem;
+    font-family: "Jacques Francois Shadow";
+    font-size: 7rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+
+
+@media (min-width: 2560px) {
+    #heading {
+        font-size: 10rem;
+        margin-right: 25rem;
+    }
+
+    .box {
+        font-size: 3.65rem;
+        width: 55rem;
+        height: 55rem;
+        line-height: 5rem;
+    }
+
+    .num {
+        width: 28rem;
+        height: 4rem;
+        font-size: 2rem;
+    }
+
+    #operator button {
+        width: 6rem;
+        height: 6rem;
+        margin-top: 4rem;
+    }
+
+    #operator button a {
+        font-size: 4rem;
+    }
+
+    #output {
+        margin-top: 3rem;
+        width: 28rem;
+        height: 5rem;
+        font-size: 3rem;
+    }
+    #Clear {
+        margin-top: 3rem;
+        width: 8rem;
+        height: 8rem;
+    }
+
+    #Clear a {
+        font-size: 2rem;
+    }
+
+    #Clear a:hover {
+        font-size: 2.45rem;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    #container {
+        width: auto;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #section {
+        width: 100%;
+    }
+
+    #heading {
+        width: 26rem;
+        height: auto;
+        font-size: 5rem;
+        text-align: center;
+
+    }
+
+    .box {
+        margin-left: 3rem;
+        width: 28rem;
+        height: 28rem;
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #container {
+        width: auto;
+        height: 100vh;
+    }
+
+    #heading {
+        width: 16rem;
+        height: auto;
+        font-size: 3.85rem;
+        text-align: center;
+    }
+
+    .box {
+        margin-left: 4rem;
+        width: 24rem;
+        height: 24rem;
+        line-height: 2rem;
+        font-size: 1.35rem;
+        text-align: center;
+    }
+
+    .num {
+        width: 10rem;
+    }
+
+    #operator button {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.85rem;
+    }
+
+    #output {
+        margin-top: 1rem;
+        width: 10rem;
+        height: 2rem;
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #container {
+        width: 100%;
+        height: 100svh;
+    }
+
+    #section {
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+
+    }
+
+    .box {
+        margin-top: 3rem;
+        margin-left: 1rem;
+        width: 22rem;
+        height: 22rem;
+        line-height: 2rem;
+        font-size: 1.35rem;
+        text-align: center;
+    }
+
+    #heading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 375px) {
+    .box {
+        margin-left: 0;
+    }
+
+    #heading {
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+    #container {
+        width: 100%;
+        height: 100vh;
+    }
+
+    #section {
+        width: 100%;
+      height: 100vh;
+    }
+
+    .box {
+        width: 20rem;
+        height: 20rem;
+        font-size: 1rem;
+    }
+
+    #heading {
+        width: 100%;
+        text-align: center;
+    }
+
+    #operator button {
+        margin-top: 1.5rem;
+        width: 2rem;
+        height: 2rem;
+    }
+
+    #Clear {
+        margin-top: 9px;
+        width: 3rem;
+        height: 3rem;
+    }
+
+    #Clear a {
+        font-size: 0.75rem;
+    }
+
+    #Clear a:hover {
+        font-size: 0.85rem;
+    }
+}
